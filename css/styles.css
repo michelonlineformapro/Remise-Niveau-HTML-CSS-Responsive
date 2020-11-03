@@ -1,0 +1,49 @@
+html{
+    /*
+    Pas de marge externe et interne et la taille des boites est égales au bordure des blocs
+     */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*
+    Fond d'écran gris foncé + couleur du texte blanc
+     */
+    background-color: #fff;
+    /* Appel de la police CDN */
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+
+}
+
+/*
+Bar de navigation
+*/
+#main-navbar{
+    width: 100%;
+}
+.nav-item{
+    width: 33%;
+}
+/*BLOC 2*/
+#bloc2{
+    background-color: darkkhaki;
+}
+#bloc2-interne{
+    color: white;
+    padding: 20px;
+}
+#bloc2-interne-2{
+    background-color: white;
+    border: solid 1px #999;
+    border-radius: 20px;
+    color: #333333;
+}
+
+/*LISTE*/
+ul, li{
+    list-style-type: none;
+}
+
