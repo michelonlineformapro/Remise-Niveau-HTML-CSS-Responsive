@@ -30,6 +30,7 @@ Bar de navigation
 /*BLOC 2*/
 #bloc2{
     background-color: darkkhaki;
+    height: 400px;
 }
 #bloc2-interne{
     color: white;
@@ -37,13 +38,16 @@ Bar de navigation
 }
 #bloc2-interne-2{
     background-color: white;
-    border: solid 1px #999;
     border-radius: 20px;
     color: #333333;
+    position: absolute;
+    z-index: 100;
+    width: 80%;
 }
 
-/*LISTE*/
-ul, li{
-    list-style-type: none;
+/*BLOC 3*/
+#bloc3{
+    margin-top: 500px;
 }
+
 
