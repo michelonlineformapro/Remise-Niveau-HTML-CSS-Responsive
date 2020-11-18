@@ -1,0 +1,317 @@
+<!-- TYPE DE DOCUMENT HTML5 -->
+<!doctype html>
+<!-- BALISE OUVRANTE ET FERMANTE html + ATTRIBUT LANGUE -->
+<html lang="fr">
+<!-- BALISE HEAD + META + APPEL DE FEUILLES DE STYLE BOOTSTAP EN CDN (distant sur un serveur) et CSS en local (depuis index.html / dossier CSS / fichier styles.css -->
+<head>
+    <!-- ENCODAGE DES CARACTERES (FR pour ç, à, ê, etc ...-->
+    <meta charset="utf-8">
+    <!-- Accepte tous les écrans + mobile + tablette -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Appel de fichier bootstrap minifié css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <!-- Appel de votre feuille de style locale -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css"/>
+    <!-- Appel de la police CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- Appel de font awesone icone gratuite distante -->
+    <link rel="stylesheet" type="text/css"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Titre de l'onglet du site dans le navigateur -->
+    <title>MON CV - ACCUIEL -</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-danger">Initiation à JavaScript ES6 - 11</h1>
+    <hr>
+    <p>Déclaration de variables : Une variable ce déclare avec <b>let</b> String, int, float</p>
+    <hr>
+    <p>Chaine de caractères : <b>let prenom = "Robert" </b></p>
+    <p>Chiffres et nombre entier : <b>let age = 45 </b></p>
+    <p>Chiffres à virgule : <b>let pi = 3.14 </b></p>
+    <p>Nous pouvons faire une addition : <b>let addition = age + pi</b></p>
+    <p>Puis utilisé un opérateur sur le résultat : <b>addition += 20</b></p>
+    <button onclick="Variables()" class="btn btn-outline-success">Test de variable, d'addition et d'opérateur</button>
+    <hr>
+    <p>Addition de chaine de caractères :</p>
+    <hr>
+    <p>On déclare des variables : <b>let nom = "TRUMP"</b> et <b>let prenom = "DONALD"</b></p>
+    <p>Addition de chaine: <b>let fullName = "Votre nom est " + nom + " et votre prenom est : " + prenom + "!" </b></p>
+    <button onclick="TypeVariables()" class="btn btn-outline-danger">Addidtion de chaine de caractères</button>
+    <hr>
+    <p>Des conditions simples</p>
+    <hr>
+    <p>On declare une fonction : <b>function ConditionSimple(){}</b></p>
+    <p>A l'interieur des accolades :</p>
+    <p>Age de la personne ! </p>
+    <b>let age = 18</b>
+    <p>Condition booléenne true ou false</p>
+    <b>let estAdulte = true</b>
+
+    <p>
+    <p>Si la personne à plus de 18 ans</p>
+    <p>
+        <b>
+            if(age >= 18){
+        </b>
+    </p>
+    <p>
+    <p style="color: green">On affiche la condition Vraie (true) car age est >= a 18</p>
+        <b>document.write("Vous êtes un adulte car vous avez plus de : " + age + " ans !")</b>
+    </p>
+    <p>
+        }else{
+    </p>
+    <p>
+        <b>
+            SINON ON AFFICHE LA CONDITION FAUSSE =
+            document.write("Vous êtes un mineur car vous avez moins de : " + age + " ans !")
+            }
+            }
+        </b>
+    </p>
+    <button onclick="ConditionSimple()" class="btn btn-outline-dark">Afficher le résultat de la condition</button>
+    <hr>
+    <p>Un boucle de lecture avec for</p>
+    <hr>
+    <p>
+        <b>function BoucleLectureFor(){</b>
+    <p>
+        <b>let uneValeur = 100</b>
+    </p>
+
+    <p><b>for(let i = 0; i <= uneValeur; i++){</b></p>
+    <p>Si i = 0 et que i est inférieur à 100 = on incrémente de 1 (++)
+        <br> <b>document.write("une valeur = 100<br>");
+            }
+            }
+        </b>
+    </p>
+    <button onclick="BoucleLectureFor()" class="btn btn-outline-warning">Afficher la boucle</button>
+    <hr>
+    <p>
+        Boucle avec In
+    </p>
+    <p>
+
+        <b>function BoucleIn(){</b>
+    <p>Liste de films dans un tableau
+        <b>
+            const films = [
+            "Jurasic Park",
+            "Star War",
+            "Vendredi 13"
+            ]
+        </b>
+    <p>
+        Parcour des valeur du tableau : pour i dans le tableau films = afficher les valeurs
+        <b>
+            for(let i in films){
+            document.write("Lister les films = " + films[i])
+            }
+            }
+        </b>
+    </p>
+    <button onclick="BoucleIn()" class="btn btn-outline-danger">Afficher la boucle avec in</button>
+    <hr>
+    <p>Boucle avec Of</p>
+    <hr>
+    <p>
+        <b>function BoucleOf(){</b>
+    <p>
+        <b>
+
+            const films = [
+            "Wall-e",
+            "Indiana Jones",
+            "Dikenek"
+            ]
+        </b>
+    </p>
+    <p>
+        <b>
+            for(let desFilms of films){
+            document.write("Lister les films = " + desFilms)
+            }
+            }
+        </b>
+    </p>
+
+    <button onclick="BoucleOf()" class="btn btn-outline-success">Afficher la boucle avec of</button>
+    <hr>
+    <p>Utilisé un switch case :</p>
+    <p>
+        <b>let jeVeuxLeCas3 = 3</b>
+    </p>
+    <p>
+        <b>
+    <p>switch(jeVeuxLeCas3){</p> Switch prend en paramètres le variable int déclarée (ici : 3)<br><br>
+    <p>case 1:
+        document.write("Cas 1 car variable jeVeux le cas = 1")
+        break
+    </p>
+    <p>
+        case 2:
+        document.write("Cas 1 car variable jeVeux le cas = 2")
+        break
+    </p>
+    <p>
+        case 3:
+        document.write("Cas 1 car variable jeVeux le cas = 3")
+        break
+        default:
+    </p>
+    <p>
+        document.write("jeVeuxLeCas n'a pas de valeur ( = null) alors on déclenche le cas par defaut")
+        }
+        </b>
+
+    </p>
+    <button onclick="UnSwitchCase()" class="btn btn-outline-warning">Afficher le switch case</button>
+    <hr>
+    <p>Exemple d'un objet en JS</p>
+    <p>
+    <p>Déclaration avec let comme une varaibales + nom de l'objet + 2 accolades </p>
+    <p><b>let objet1 = { </b></p>
+    <p><b>titre: "Indiana Jones",
+        nombreDePages: 400,
+        enStock: true
+        }
+    </b>
+    </p>
+
+    <p>
+        <b>document.write(objet1.titre + " Nombre de pages = " + objet1.nombreDePages + " En stock = " + objet1.enStock
+            + "<br>")
+        </b>
+    </p>
+    <button onclick="UnObjet()" class="btn btn-outline-danger">Créer et afficher un objet simple</button>
+    <hr>
+    <p>Un classe et un constructeur</p>
+    <p>
+    <p>class BandeDessinee{</p>
+    <p>
+        <b>
+            constructor(titre, auteur, pages){
+            this.titre = titre
+            this.auteur = auteur
+            this.pages = pages
+            }
+        </b>
+    </p>
+    <p>
+
+    <p><b>
+        //Utilisé la classe : on créer une variable = init de la classe avec le mot clé new NomDeClasse(paramètres = ici
+        titre + auteur + nombre de page)
+    </b></p>
+    <p>
+        let bd1 = new BandeDessinee("Titin","Hergé",450)
+    </p>
+    <p><b>
+        document.write(bd1.titre + " est ecrit par : " + bd1.auteur + " et possède : " + bd1.pages + " pages<br>")
+    </b></p>
+
+    </p>
+    <button onclick="ClasseEtConstructeur()" class="btn btn-outline-success">Créer et afficher un objet simple</button>
+    <hr>
+    <p>Enfin création d'un tableau</p>
+    <p><b>let tableau = ["ICI element1 <br> ", " un autre truc ", " ici élément 3 mais index2 car un tableau commence par 0 !<br> "]</b></p>
+    <p><b>let tableau1 = tableau[0]  Designe le 1er element du tableau</b></p>
+    <p><b>let tableau3 = tableau[2]  Designe l'element 3 du tableau</b></p>
+    <p><b>document.write(tableau1 + tableau3)</b></p>
+    <p>//Compter les elements</p>
+    <p><b>document.write("Ce tableau a : " + tableau.length + " éléments <br>")</b></p>
+    <p>//Ajouter un element</p>
+    <p><b>tableau.push("Ajoute un element")</b></p>
+    <p>//Ajouter au debut</p>
+    <p><b>tableau.unshift("Element au debut du tableau")</b></p>
+    <p>//Suprimer le dernier element -> pas de paramètre</p>
+    <p><b>tableau.pop()</b></p>
+    <p>//set = ensemble de liste non ordonnée et map liste avec valeur pair clé + valeur</p>
+    <button onclick="TableauOrdone()" class="btn btn-outline-warning">Créer et afficher les valeurs du tableau</button>
+    <hr>
+    <p>Test de la boucle while</p>
+
+    <p><b>let livresEnStock = 100</b></p>
+
+    <p><b>let livresDisponible = 30</b></p>
+    <p><b>let livresEnPret = 70</b></p>
+
+    <p>
+        <b>
+    while(livresEnStock > 0 && livresDisponible > 0){
+    livresEnPret++;
+    livresDisponible--;
+    livresEnStock--;
+    }
+        </b>
+    </p>
+    <button onclick="BoucleLectureTantQue()" class="btn btn-outline-success">Créer et afficher un objet simple</button>
+    <hr>
+    <p>Des fonctions dans une classe</p>
+    <p><b>class CompteBanque{
+    <p style="color: yellow">Initialisation de la classe avec un constructeur :</p>
+    constructor(proprio, montant) {
+    this.proprio = proprio
+    this.montant = montant
+    }
+    </b></p>
+
+    <p style="color: #3b7baf">Creation de fonction dans la classe + Afficher le solde du compte</p>
+    <p>
+        <b>
+            VoirSolde(){
+            document.write("Solde : " + montant)
+            }
+        </b>
+    </p>
+    <p><b>
+        FaireDepot(montantDepot){
+        this.montant += montantDepot
+        }
+        }
+        </b>
+    </p>
+    <p>Fermeture de la classe</p>
+
+
+    <p>Créer une instance de la classe et init des paramètres</p>
+
+    <p><b>const solde = new CompteBanque("Michael", 10500)</b></p>
+    <p style="color: green">Appel de la fonction de la classe (solde = instance de la classe + nom de la methode</p>
+    solde.VoirSolde()
+    <p style="color: red">Appel de la  fonction faire un depot (on passe le montant en paramètres)</p>
+    solde.FaireDepot(2000)
+
+    <p style="color: red">On affiche de nouveau le montant du compte après le dépot</p>
+    solde.VoirSolde()
+    <br>
+    <button onclick="ExempleInstanceClasse()" class="btn btn-outline-warning">Test des fonctions dans une classe</button>
+
+    <h2 class="text-center text-danger">ATTENTION !</h2>
+    <p>Au final : Dans une classe on peu créer des fonctions static qui non pas besoin de constructeur car on ne va pas les instanciés.</p>
+    <p>Exemple : </p>
+    <p>
+        <b>class UneClasse{<br>
+                static function DireBonjour()<br>{ console.log("Salut") }
+            }
+            <p>Appel sans constructeur</p>
+            <p> UneClasse.DireBonjour()</p>
+        </b>
+    </p>
+</div>
+
+
+<!-- SCRIPT jQuery et Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- SCRIPT local dossier -> js -> fichier main.js -->
+<script type="text/javascript" src="../js/main.js"></script>
+<!-- Création d'un variable qui est égale a la fonction principale de main.js -->
+<script>
+    let js = new JS();
+</script>
+
+</body>
+</html>

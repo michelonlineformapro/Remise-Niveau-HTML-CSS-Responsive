@@ -15,8 +15,8 @@ body{
     /* Appel de la police CDN */
     font-family: 'Ubuntu', sans-serif;
     overflow-x: hidden;
-
 }
+
 
 /*
 Bar de navigation
@@ -26,6 +26,10 @@ Bar de navigation
 }
 .nav-item{
     width: 33%;
+}
+/* BRN Burger*/
+.navbar-toggler{
+    background-color: #bdb76b;
 }
 /*BLOC 2*/
 #bloc2{
@@ -40,14 +44,27 @@ Bar de navigation
     background-color: white;
     border-radius: 20px;
     color: #333333;
-    position: absolute;
-    z-index: 100;
-    width: 80%;
+    width: 100%;
 }
 
 /*BLOC 3*/
 #bloc3{
     margin-top: 500px;
+}
+
+
+/*RESPONSIVE*/
+/* Quand écran est en dessous 600 pixels , On cache les liens sauf Accueil . On remplace par un boutton */
+@media screen and (max-width: 600px) {
+    #bloc2-interne-2{
+        display: block;
+        float: left;
+    }
+}
+
+/* La classe responsive est ajoutée a top nav avec JavaScript quand utilisateur click icon. la classe rend facile la navigation pour les petits écrans (panneau vertical) */
+@media screen and (max-width: 600px) {
+
 }
 
 
